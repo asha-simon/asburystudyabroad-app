@@ -1,0 +1,44 @@
+/* .carousel {
+  height: 90%;
+} */
+
+.carousel-caption {
+  text-align: left !important;
+  bottom: 20% !important;
+}
+
+.carousel-indicators {
+  bottom: 15% !important;
+}
+
+@media (max-width: 1024px) and (min-width:769px) {
+    .carousel-indicators {
+        bottom: 25px !important;
+      }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 100%;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel-item img {
+    height: 100%;
+  }
+
+  .carousel-indicators {
+    bottom: 0 !important;
+  }
+
+  .carousel-caption {
+    bottom: 10% !important;
+  }
+  
+}
