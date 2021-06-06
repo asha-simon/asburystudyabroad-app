@@ -73,7 +73,7 @@ const Home = () => {
                     vel necessitatibus optio ad corporis.
                   </p>
                   <div className="text-center">
-                    <a href="about.html" className="more-btn">
+                    <a href="/about-us" className="more-btn">
                       Learn More <i className="bx bx-chevron-right"></i>
                     </a>
                   </div>

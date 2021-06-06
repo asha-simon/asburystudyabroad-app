@@ -12,6 +12,7 @@ import Destinations from "./components/Destinations";
 import MainCourses from "./components/Courses";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/Contact";
+import SubCourseList from "./components/Courses/course-list";
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/main-courses" component={MainCourses} />
           <Route exact path="/destinations" component={Destinations} />
           <Route exact path="/contact-us" component={ContactUs} />
+          <Route exact path="/sub-course-list" component={SubCourseList}/>
         </Switch>
       </Router>
     </>

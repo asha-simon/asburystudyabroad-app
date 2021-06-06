@@ -790,7 +790,7 @@ section {
   text-align: left; */
 }
 
-.courses .course-content h3 {
+.courses .course-content h3, .course-list .course-content h3 {
   font-weight: 700;
   font-size: 20px;
 }
@@ -804,7 +804,7 @@ section {
   color: #1a2640;
 }
 
-.courses .course-content p {
+.courses .course-content p, .course-list .course-content p {
   font-size: 14px;
   color: #777777;
 }
@@ -866,6 +866,41 @@ section {
 .courses .trainer .trainer-rank {
   font-size: 18px;
   color: #657a6d;
+}
+
+.course-list {
+  margin-top: 60px;
+}
+
+.course-list h4 {
+  margin-bottom: .25em;
+}
+
+.course-list .col {
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.course-list .course-content {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: left;
+  padding: 15px;
+}
+
+.course-list .direction {
+  flex-direction: column;
+}
+
+.course-list .course-content p {
+  align-self: flex-start;
+  margin-bottom: 0.25em;
+}
+
+.course-list .course-content i {
+  margin-right: 0.25em;
 }
 
 /*--------------------------------------------------------------
@@ -1689,3 +1724,38 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+      /* for desktop */
+      .whatsapp_float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .whatsapp-icon {
+        margin-top: 16px;
+    }
+
+    /* for mobile */
+    @media screen and (max-width: 767px) {
+        .whatsapp-icon {
+            margin-top: 10px;
+        }
+
+        .whatsapp_float {
+            width: 40px;
+            height: 40px;
+            bottom: 20px;
+            right: 10px;
+            font-size: 22px;
+        }
+    }
