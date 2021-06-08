@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import { subCourseForAccounts } from "./sub-courses";
+import { coursesForBusiness } from "./sub-courses";
 
 const SubCourseList = () => {
   return (
@@ -15,8 +15,14 @@ const SubCourseList = () => {
         <section id="course-list" className="course-list">
           <Container data-aos="fade-up">
             <h4>All Courses</h4>
-            <Row lg={3} md={2} className="g-4" data-aos="zoom-in" data-aos-delay="100">
-              {subCourseForAccounts.map((item, index) => (
+            <Row
+              lg={3}
+              md={2}
+              className="g-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              {coursesForBusiness.map((item, index) => (
                 //   <Row data-aos="zoom-in" data-aos-delay="100">
                 //   <Col lg={4} md={6} className="d-flex align-items-stretch">
                 // <div class="course-item">
@@ -47,16 +53,18 @@ const SubCourseList = () => {
                   <Card style={{ width: "20rem" }}>
                     <Card.Img
                       variant="top"
-                      src={
-                        require(`../../assets/img/courses/${item.image}`)
-                          .default
-                      }
+                      src={require(`../../assets/img/${item.image}`).default}
                     />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
+                      <Card.Title>{item.courseName}</Card.Title>
+                      <Card.Subtitle className="mb-2 text-muted">
+                        {item.university}
+                      </Card.Subtitle>
                       <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        <p>Degree</p>
+                        <p>
+                          <i class="fa fa-clock-o"></i>&nbsp; 4 Years
+                        </p>
                       </Card.Text>
                       {/* <Button variant="primary">Go somewhere</Button> */}
                     </Card.Body>

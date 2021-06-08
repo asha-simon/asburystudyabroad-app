@@ -1,3 +1,5 @@
+		 	 		
+
 export const courseList = [
 {
     courseName: "Accounting",
@@ -5,47 +7,32 @@ export const courseList = [
     
 },
 {
-    courseName: "Business Management",
-    image: "business-management.jpg"
-    
-},
-{
-    courseName: "Computer Science",
+    courseName: "Arts and Theatre Performance",
     image: "computer-science-2.jpg"
     
 },
 {
-    courseName: "Economics",
+    courseName: "Engineering & Technology",
     image: "course-7.jpg"
     
 },
 {
-    courseName: "HRM",
+    courseName: "Business",
+    image: "business-management.jpg"
+    
+},
+{
+    courseName: "Law",
     image: "course-7.jpg"
     
 },
 {
-    courseName: "Marketing",
+    courseName: "Medical",
     image: "course-7.jpg"
     
 },
 {
-    courseName: "Logistics",
-    image: "course-7.jpg"
-    
-},
-{
-    courseName: "Project Management",
-    image: "course-7.jpg"
-    
-},
-{
-    courseName: "Nursing",
-    image: "course-7.jpg"
-    
-},
-{
-    courseName: "Pharmacy",
+    courseName: "Science",
     image: "course-7.jpg"
     
 },

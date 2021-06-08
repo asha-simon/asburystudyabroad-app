@@ -30,7 +30,7 @@ const MainCourses = () => {
           <div class="container" data-aos="fade-up">
             <div class="row" data-aos="zoom-in" data-aos-delay="100">
             {courseList.map((item, index) => (
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch item-col">
                 <div class="course-item">
                   <img
                     src= {require(`../../assets/img/courses/${item.image}`).default}

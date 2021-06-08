@@ -1,23 +1,33 @@
-export const subCourseForAccounts = [
+export const coursesForBusiness = [
     {
-        courseName: "Accounting and Finance",
-        image: "course-7.jpg"
+        courseName: "Business & Management",
+        image: "course-1.jpg",
+        university: "Holmes Education Group"
     },
     {
-        courseName: "Business and Management",
-        image: "course-7.jpg"
+        courseName: "Business (with Law) BA (Hons)",
+        image: "course-1.jpg",
+        university: "Holmes Education Group"
     },
     {
-        courseName: "Computer Science",
-        image: "course-7.jpg"
+        courseName: "HRM",
+        image: "course-1.jpg",
+        university: "University Of BedFordShire"
     },
     {
-        courseName: "Bachelor of Laws",
-        image: "course-7.jpg"
+        courseName: "Logistics",
+        image: "course-1.jpg",
+        university: "University Of BedFordShire"
     },
     {
-        courseName: "Master of Laws",
-        image: "course-7.jpg"
+        courseName: "Marketing",
+        image: "course-1.jpg",
+        university: "University Of EastLondon"
+    },
+    {
+        courseName: "MBA",
+        image: "course-1.jpg",
+        university: "University Of EastLondon"
     },
 
 ]
