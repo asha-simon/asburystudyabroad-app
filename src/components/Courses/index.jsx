@@ -47,7 +47,7 @@ useEffect(() => {
                     alt="..."
                   />
                   <div className="course-content">
-                    <div className="d-flex justify-content-between align-items-center mb-3">
+                    <div className="d-flex">
                       <h4>
                         <a href="/sub-course-list">{item.courseName}</a>
                       </h4>

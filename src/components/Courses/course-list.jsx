@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
 import { coursesForBusiness } from "./sub-courses";
 
 const SubCourseList = () => {
@@ -15,6 +17,11 @@ const SubCourseList = () => {
         <section id="course-list" className="course-list">
           <Container data-aos="fade-up">
             <h4>All Courses</h4>
+            <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </DropdownButton>
             <Row
               lg={3}
               md={2}
