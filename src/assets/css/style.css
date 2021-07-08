@@ -123,6 +123,43 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.header-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background: #1c3180;
+}
+
+.header-top {
+  padding: 6px;
+}
+
+.header-top .list-group-item {
+  background-color: transparent;
+  padding: 0.05rem 0.35rem;
+  border: none;
+}
+
+.header-container .header-top a {
+  color: #fff;
+  font-size: 15px;
+}
+
+.header-container .header-top a:hover {
+  color: #fff;
+}
+
+.header-top .whatsapp_float {
+  position: unset;
+  background: transparent;
+  box-shadow: none;
+  font-size: 16px;
+}
+
+.header-top .whatsapp-icon {
+  margin-top: 0;
+  margin-right: 4px;
+}
+
 #header {
   background: #2596be;
   /* #F1F1F1; */
@@ -561,7 +598,7 @@ section {
 }
 
 .breadcrumbs {
-  margin-top: 72px;
+  margin-top: 127px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   /* #1a2640; */
@@ -571,7 +608,7 @@ section {
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 63px;
+    margin-top: 127px;
   }
 }
 
@@ -1008,6 +1045,89 @@ section {
 
 .destinations .owl-dot.active {
   background-color: #1a2640 !important;
+}
+
+.destination-details-header {
+  height: 70vh;
+}
+
+.destination-details img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destination-details .destination-details-breadcrumbs {
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  transform: translate(15%, 10%);
+}
+
+.destination-form-row {
+  margin: 10px;
+  padding: 2.5em 1em;
+}
+
+.destination-form-row .toggle-btn {
+  float: right;
+  background: none;
+  border: none;
+}
+
+.destination-details .destination-description {
+  padding: 20px;
+}
+
+.destination-details h2 {
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  width: 80% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(241, 241, 241);
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 25px rgb(0 0 0 / 5%);
+}
+
+.destination-details .contact-form form {
+  width: 100%;
+}
+
+.destination-details .destination-form-row .contact-form-control {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  width: 75%;
+}
+
+.g-recaptcha {
+  display: flex;
+  justify-content: center;
+}
+
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
+.contact-form-submit-btn {
+  background: #0f3c4c;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 10px;
 }
 
 /*--------------------------------------------------------------
@@ -1751,23 +1871,25 @@ section {
 }
 
 #footer .copyright {
- color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* for desktop */
 .whatsapp_float {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   bottom: 40px;
-  right: 40px;
+  left: 40px;
   background-color: #25d366;
-  color: #fff;
+  color: #fff !important;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
+  /* box-shadow: 2px 2px 3px #999; */
   z-index: 100;
+  box-shadow: rgb(0 0 0 / 40%) 2px 2px 6px;
+  transition: all 0.5s ease 0s;
 }
 
 .whatsapp-icon {

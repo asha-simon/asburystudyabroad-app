@@ -25,17 +25,17 @@ const SubCourseList = () => {
               {coursesForBusiness.map((item, index) => (
                 //   <Row data-aos="zoom-in" data-aos-delay="100">
                 //   <Col lg={4} md={6} className="d-flex align-items-stretch">
-                // <div class="course-item">
+                // <div className="course-item">
                 //     <img
                 //       src= {require(`../../assets/img/courses/${item.image}`).default}
-                //       class="img-fluid"
+                //       className="img-fluid"
                 //       alt="..."
                 //     />
                 //   </div>
                 // </Col>
                 // <Col lg={7} md={6} className="d-flex align-items-stretch">
-                // <div class="course-content">
-                //          <div class="d-flex justify-content-between align-items-center mb-3 direction">
+                // <div className="course-content">
+                //          <div className="d-flex justify-content-between align-items-center mb-3 direction">
                 //         <h4>
                 //           <a href="course-details.html">{item.courseName}</a>
                 //         </h4>
@@ -43,7 +43,7 @@ const SubCourseList = () => {
                 //         <p>Degree</p>
                 //         <p>World Rank : <span></span></p>
                 //         <p>
-                //         <i class="fa fa-clock-o" aria-hidden="true"></i>
+                //         <i className="fa fa-clock-o" aria-hidden="true"></i>
                 //            2 years</p>
                 //       </div>
                 //     </div>
@@ -63,7 +63,7 @@ const SubCourseList = () => {
                       <Card.Text>
                         <p>Degree</p>
                         <p>
-                          <i class="fa fa-clock-o"></i>&nbsp; 4 Years
+                          <i className="fa fa-clock-o"></i>&nbsp; 4 Years
                         </p>
                       </Card.Text>
                       {/* <Button variant="primary">Go somewhere</Button> */}

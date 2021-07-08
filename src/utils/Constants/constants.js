@@ -1,0 +1,1 @@
+export const mainCourses = ["Accounting", "Arts & Theatre Performance", "Business", "Engineering & Technology", "Law", "Medical", "Science"];

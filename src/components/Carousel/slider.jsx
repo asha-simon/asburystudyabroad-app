@@ -23,7 +23,7 @@ const HeaderSlider = () => {
             Leading Tomorrow{" "}
           </h1>
           <h2>Your bright future is our mission</h2>
-          <a href="courses.html" class="btn-get-started">Get Started</a>
+          <a href="courses.html" className="btn-get-started">Get Started</a>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -72,7 +72,7 @@ const HeaderSlider = () => {
             Leading Tomorrow{" "}
           </h1>
           <h2>Your bright future is our mission</h2>
-          <a href="courses.html" class="btn-get-started">Get Started</a>
+          <a href="courses.html" className="btn-get-started">Get Started</a>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
