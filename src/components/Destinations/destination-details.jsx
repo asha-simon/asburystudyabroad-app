@@ -4,12 +4,12 @@ import HeaderTabMenus from "../Header/headerTabs";
 import ContactForm from "../../utils/EnquiryForm/contact-form";
 import Footer from "../Footer/footer";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import uk_img from "../../assets/img/countries/london-uk.jpg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import Tab from "react-bootstrap/Tab";
+import Nav from "react-bootstrap/Nav";
 import AccordionContext from "react-bootstrap/AccordionContext";
 import { useAccordionToggle } from "react-bootstrap/AccordionToggle";
 import { useContext } from "react";
@@ -120,6 +120,87 @@ const DestinationDetails = (props) => {
             </Row>
           </Container>
         </section>
+
+        {/* <!-- ======= Cource Details Tabs Section ======= --> */}
+        <section id="destination-details-tabs" class="destination-details-tabs">
+          <Container className="aos-init aos-animate">
+            <Tab.Container defaultActiveKey="profile">
+              <Row>
+                <Col sm={3}>
+                  <Nav variant="pills" className="flex-column">
+                    <Nav.Item>
+                      <Nav.Link eventKey="home">REQUIRED TESTS</Nav.Link>
+                    </Nav.Item>
+
+                    <Nav.Item>
+                      <Nav.Link eventKey="profile">UNIVERSITIES</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="contact">LIVING COSTS</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="rights">
+                        WORK RIGHTS AND STAY BACK
+                      </Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+                </Col>
+                <Col sm={9}>
+                  <Tab.Content>
+                    <Tab.Pane eventKey="home">
+                      <h5>Home Dashbord</h5>
+                      <p>
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        in culpa qui officia deserunt mollitia animi, id est
+                        laborum et dolorum fuga.
+                      </p>
+                    </Tab.Pane>
+
+                    <Tab.Pane eventKey="profile">
+                      <h5>Profile Details</h5>
+                      <p>
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        in culpa qui officia deserunt mollitia animi, id est
+                        laborum et dolorum fuga.
+                      </p>
+                    </Tab.Pane>
+
+                    <Tab.Pane eventKey="contact">
+                      <h5>Contact Info</h5>
+                      <p>
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        in culpa qui officia deserunt mollitia animi, id est
+                        laborum et dolorum fuga.
+                      </p>
+                    </Tab.Pane>
+
+                    <Tab.Pane eventKey="rights">
+                      <h5>Contact Info</h5>
+                      <p>
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        in culpa qui officia deserunt mollitia animi, id est
+                        laborum et dolorum fuga.
+                      </p>
+                    </Tab.Pane>
+                  </Tab.Content>
+                </Col>
+              </Row>
+            </Tab.Container>
+          </Container>
+        </section>
+        {/* <!-- End Cource Details Tabs Section --> */}
       </main>
       <Footer />
     </>

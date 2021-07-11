@@ -242,8 +242,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-  color: #fff36d;
-  /* #1a2640; */
+  color: #fff36d !important;
 }
 
 .nav-menu .drop-down ul {
@@ -369,6 +368,7 @@ h6 {
   cursor: pointer;
   text-align: right;
   color: #37423b !important;
+  visibility: hidden;
 }
 
 .mobile-nav-toggle i {
@@ -954,6 +954,10 @@ section {
   color: #212529;
   background: none;
   border-color: #212529;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .course-list #dropdown-basic-button:focus {
@@ -1160,6 +1164,83 @@ section {
   padding: 5px 10px;
 }
 
+@media only screen and (max-width: 576px) {
+  .g-recaptcha {
+    transform: scale(.7)!important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Destination Details Tabs
+--------------------------------------------------------------*/
+.destination-details-tabs {
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.destination-details-tabs .nav-tabs {
+  border: 0;
+}
+
+.destination-details-tabs .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #37423b !important;
+  border-radius: 0 !important;
+  border-right: 2px solid #e2e7e4;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.destination-details-tabs .nav-link:hover {
+  color: #1a2640;
+}
+
+.destination-details-tabs .nav-link.active {
+  background-color: #fff !important;
+  color: #1a2640 !important;
+  border-color: #1a2640;
+}
+
+.destination-details-tabs .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.destination-details-tabs .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #37423b;
+}
+
+.destination-details-tabs .details p {
+  color: #777777;
+}
+
+.destination-details-tabs .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .destination-details-tabs .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+  .destination-details-tabs .nav-link.active {
+    color: #fff !important;
+    background: #0f3c4c !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .destination-details-tabs .tab-pane.active {
+    padding: 20px 15px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1313,69 +1394,6 @@ section {
 
 .course-details .course-info a {
   color: #657a6d;
-}
-
-/*--------------------------------------------------------------
-# Course Details Tabs
---------------------------------------------------------------*/
-.cource-details-tabs {
-  overflow: hidden;
-  padding-top: 0;
-}
-
-.cource-details-tabs .nav-tabs {
-  border: 0;
-}
-
-.cource-details-tabs .nav-link {
-  border: 0;
-  padding: 12px 15px 12px 0;
-  transition: 0.3s;
-  color: #37423b;
-  border-radius: 0;
-  border-right: 2px solid #e2e7e4;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.cource-details-tabs .nav-link:hover {
-  color: #1a2640;
-}
-
-.cource-details-tabs .nav-link.active {
-  color: #1a2640;
-  border-color: #1a2640;
-}
-
-.cource-details-tabs .tab-pane.active {
-  -webkit-animation: fadeIn 0.5s ease-out;
-  animation: fadeIn 0.5s ease-out;
-}
-
-.cource-details-tabs .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #37423b;
-}
-
-.cource-details-tabs .details p {
-  color: #777777;
-}
-
-.cource-details-tabs .details p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .cource-details-tabs .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-  .cource-details-tabs .nav-link.active {
-    color: #fff;
-    background: #1a2640;
-  }
 }
 
 /*--------------------------------------------------------------

@@ -14,6 +14,7 @@ import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/Contact";
 import SubCourseList from "./components/Courses/course-list";
 import DestinationDetails from "./components/Destinations/destination-details";
+import Services from "./components/Services";
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/destinations" component={Destinations} />
           <Route exact path="/destination-details" component={DestinationDetails}/>
           <Route exact path="/contact-us" component={ContactUs} />
+          <Route exact path="/services" component={Services}/>
           <Route exact path="/sub-course-list" component={SubCourseList}/>
         </Switch>
       </Router>

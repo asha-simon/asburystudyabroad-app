@@ -7,9 +7,38 @@ import { useEffect } from "react";
 import { useState } from "react";
 import logo from "../../assets/img/logo(1).png";
 import Navigation from "./navigation";
+import { useHistory } from "react-router-dom";
 
 const HeaderTabMenus = () => {
   const [navVisible, setNavVisible] = useState(false);
+  let history  = useHistory();
+  const pathname = history.location.pathname.split('/').slice(1);
+  const menuConfig = [
+    {
+      name: 'Home',
+      key: 'home',
+    },
+    {
+      name: 'About',
+      key: 'about-us',
+    },
+    {
+      name: 'Courses',
+      key: 'main-courses',    
+    },
+    {
+      name: 'Destinations',
+      key: 'destinations',
+    },
+    {
+      name: 'Services',
+      key: 'services',
+    },
+    {
+      name: 'Contact Us',
+      key: 'contact-us'
+    }
+  ];
 
   useEffect(() => {
     if (window.innerWidth < 992) {
@@ -21,6 +50,7 @@ const HeaderTabMenus = () => {
     <>
       {/* Header */}
       <Container fluid className="header-container fixed-top">
+        {console.log("pathname",history.location.pathname, pathname)}
         <Container className="header-top social-links text-center text-md-left">
           <Row className="align-items-center">
             <Col>
@@ -89,10 +119,13 @@ const HeaderTabMenus = () => {
 
             <nav className="nav-menu d-none d-lg-block">
               <ul>
-                <li className="active">
-                  <a href="/home">Home</a>
+                {menuConfig.map(menuItem => (
+                  <li className={pathname[0] === menuItem.key ? "active" : ""}>
+                  <a href={`/${menuItem.key}`}>{menuItem.name}</a>
                 </li>
-                <li>
+                ))}
+                
+                {/* <li>
                   <a href="/about-us">About</a>
                 </li>
                 <li>
@@ -102,11 +135,11 @@ const HeaderTabMenus = () => {
                   <a href="/destinations">Destinations</a>
                 </li>
                 <li>
-                  <a href="events.html">Services</a>
+                  <a href="/services">Services</a>
                 </li>
                 <li>
                   <a href="/contact-us">Contact Us</a>
-                </li>
+                </li> */}
               </ul>
             </nav>
             {/* nav-menu  */}

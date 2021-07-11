@@ -5,8 +5,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
 import { coursesForBusiness } from "./sub-courses";
 
 const SubCourseList = () => {
@@ -17,24 +17,39 @@ const SubCourseList = () => {
         <section id="course-list" className="course-list">
           <Container data-aos="fade-up">
             <h4>All Courses</h4>
-            <Container className="d-flex">
-            <DropdownButton id="dropdown-basic-button" title="Course Type">
-              <Dropdown.Item href="#/action-1">Undergraduate</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Masters / Postgratuate</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Diploma</Dropdown.Item>
-            </DropdownButton>
-            <DropdownButton id="dropdown-basic-button" title="University">
-              <Dropdown.Item href="#/action-1">University Of Greenwich</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">University Of East London</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">University of Bedfordshire</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">University of Hertfordshire</Dropdown.Item>
-            </DropdownButton>
-            <DropdownButton id="dropdown-basic-button" title="Country">
-              <Dropdown.Item href="#/action-1">UK</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Ireland</Dropdown.Item>
-            </DropdownButton>
-            </Container>
-            
+            <Row className="d-flex">
+              <Col md={3} sm={12}>
+                <DropdownButton id="dropdown-basic-button" title="Course Type">
+                  <Dropdown.Item href="#/action-1">Undergraduate</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    Masters / Postgratuate
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Diploma</Dropdown.Item>
+                </DropdownButton>
+              </Col>
+              <Col  md={3} sm={12}>
+                <DropdownButton id="dropdown-basic-button" title="University">
+                  <Dropdown.Item href="#/action-1">
+                    University Of Greenwich
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    University Of East London
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    University of Bedfordshire
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    University of Hertfordshire
+                  </Dropdown.Item>
+                </DropdownButton>
+              </Col>
+              <Col  md={3} sm={12}>
+                <DropdownButton id="dropdown-basic-button" title="Country">
+                  <Dropdown.Item href="#/action-1">UK</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Ireland</Dropdown.Item>
+                </DropdownButton>
+              </Col>
+            </Row>
             <Row
               lg={3}
               md={2}
