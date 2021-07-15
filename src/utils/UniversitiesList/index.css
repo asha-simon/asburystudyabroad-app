@@ -1,0 +1,29 @@
+.universities-list-container {
+    border: 1px solid black;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background: #fff;
+    height: 430px;
+  }
+
+.universities-list-header {
+  background: #e6f6fb;
+  width: 100%;
+}
+
+.universities-list-header h5 {
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.universities-list-container .list-group {
+    padding: 10px 15px;
+    /* height: 230px;
+    overflow: auto; */
+}
+
+.universities-list-container .list-group-item {
+  background: transparent;
+}

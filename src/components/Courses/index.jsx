@@ -6,16 +6,25 @@ import course2_img from "../../assets/img/courses/business-management.jpg";
 import course3_img from "../../assets/img/course-3.jpg";
 import { courseList } from "./courses";
 import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 
 const MainCourses = () => {
 
+const history = useHistory();
+
 const addMainCategories = () => {
+}
+
+const gotoSubCourses = (e, item) => {
+  e.preventDefault();
+  history.push(`/main-courses/${item.id}`);
 }
 
 useEffect(() => {
   addMainCategories()
 }, [])
+
 
   return (
     <>
@@ -49,7 +58,7 @@ useEffect(() => {
                   <div className="course-content">
                     <div className="d-flex">
                       <h4>
-                        <a href="/sub-course-list">{item.courseName}</a>
+                        <a href="#" onClick={(e) => gotoSubCourses(e, item)}>{item.courseName}</a>
                       </h4>
                     </div>
                   </div>

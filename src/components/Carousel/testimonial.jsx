@@ -2,7 +2,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import testimonials_1 from "../../assets/img/testimonials/testimonials-1.jpg";
+import testimonials_1 from "../../assets/img/testimonials/Agnes-photo.jpg";
 import testimonials_2 from "../../assets/img/testimonials/testimonials-2.jpg";
 import testimonials_3 from "../../assets/img/testimonials/testimonials-3.jpg";
 import testimonials_4 from "../../assets/img/testimonials/testimonials-4.jpg";
@@ -21,8 +21,11 @@ const TestimonialsCarousel = () => {
         items: 1,
       },
       900: {
-        items: 2,
+        items: 1,
       },
+      1024: {
+        items: 2,
+      }
     },
   };
 
@@ -45,14 +48,19 @@ const TestimonialsCarousel = () => {
             <div className="testimonial-wrap">
               <div className="testimonial-item">
                 <img src={testimonials_1} className="testimonial-img" alt="" />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Agnus Susan Joshua</h3>
+                <h4>Kingston University</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec
-                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies
-                  eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                  semper.
+                  My journey to studying abroad happened with the help of Asbury
+                  Study Abroad in the UK. Presently, am a student at Kingston
+                  University pursuing Msc. International Business Management. I
+                  am thankful to Raji Mam for helping me to choose the right
+                  university and courses. She helped to get my visa without much
+                  effort from my side. Also, Raji Mam was very much accessible
+                  and was spontaneous in responding to my queries. I am thankful
+                  to her for their guidance and for making my dream come true.
+                  Wishing the best for the team Asbury Study Abroad.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>

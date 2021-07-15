@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import { useEffect } from "react";
 import { useState } from "react";
-import logo from "../../assets/img/logo(1).png";
+import logo from "../../assets/img/logo.png";
 import Navigation from "./navigation";
 import { useHistory } from "react-router-dom";
 

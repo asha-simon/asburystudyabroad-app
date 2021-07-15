@@ -18,9 +18,9 @@ const HeaderSlider = () => {
             <Carousel.Caption data-aos="zoom-in"
           data-aos-delay="100">
            <h1>
-            Learning Today,
+            Success Through 
             <br />
-            Leading Tomorrow{" "}
+            Knowledge{" "}
           </h1>
           <h2>Your bright future is our mission</h2>
           <a href="courses.html" className="btn-get-started">Get Started</a>

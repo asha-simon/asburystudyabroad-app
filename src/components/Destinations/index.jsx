@@ -9,7 +9,7 @@ const Destinations = ({ history }) => {
 
  const gotoDestinationDetails = (e, details) => {
        e.preventDefault();
-       history.push("/destination-details", details);
+       history.push(`/destinations/${details.country}`, details);
  }
 
   return (
@@ -48,19 +48,6 @@ const Destinations = ({ history }) => {
                   </div>
                 </div>
               ))}
-              {/* <div className="col-lg-6 col-md-6 d-flex align-items-stretch">
-                <div className="country">
-                  <img src={ireland_img} className="img-fluid" alt="" />
-                  <div className="country-content">
-                    <a href="destination-details.html">
-                      <h4>Study in Ireland</h4>
-                    </a>
-                    <p>
-                      The world's biggest and best business have established key strategic research facilities.
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </section>

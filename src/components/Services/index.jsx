@@ -3,13 +3,14 @@ import Container from "react-bootstrap/esm/Container";
 import Footer from "../Footer/footer";
 import HeaderTabMenus from "../Header/headerTabs";
 import Row from "react-bootstrap/esm/Row";
-import event1 from "../../assets/img/services/cambridge-university.jpg";
-import event2 from "../../assets/img/services/admission-support.jpg";
+import event1 from "../../assets/img/services/admission-support.jpg";
+import event2 from "../../assets/img/services/cambridge-university.jpg";
 import event3 from "../../assets/img/services/career-counselling.jpg";
 import event4 from "../../assets/img/services/applications.jpg"
 import event5 from "../../assets/img/services/test-preparation.jpg";
 import event6 from "../../assets/img/services/visa.jpg";
 import event7 from "../../assets/img/services/pre-departure-sessions.jpg";
+import event8 from "../../assets/img/services/post-arrival.jpg";
 
 const Services = () => {
   return (
@@ -161,7 +162,7 @@ const Services = () => {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src={event1} alt="..." />
+                    <img src={event8} alt="..." />
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">

@@ -1174,8 +1174,9 @@ section {
 # Destination Details Tabs
 --------------------------------------------------------------*/
 .destination-details-tabs {
+  background: rgb(241, 241, 241);
   overflow: hidden;
-  padding-top: 0;
+  padding-top: 50px;
 }
 
 .destination-details-tabs .nav-tabs {
@@ -1184,7 +1185,7 @@ section {
 
 .destination-details-tabs .nav-link {
   border: 0;
-  padding: 12px 15px 12px 0;
+  padding: 12px 15px;
   transition: 0.3s;
   color: #37423b !important;
   border-radius: 0 !important;
@@ -1198,8 +1199,8 @@ section {
 }
 
 .destination-details-tabs .nav-link.active {
-  background-color: #fff !important;
-  color: #1a2640 !important;
+  background-color: #2596be !important;
+  color: #fff   !important;
   border-color: #1a2640;
 }
 
@@ -1223,7 +1224,39 @@ section {
   margin-bottom: 0;
 }
 
+.destination-details-tabs .tab-pane-container {
+  border: 1px solid black;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background: #fff;
+  height: 430px;
+}
+
+.destination-details-tabs .tab-pane-header {
+  background: #e6f6fb;
+  width: 100%;
+}
+
+.destination-details-tabs .tab-pane-header h5 {
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.destination-details-tabs .tab-pane-container p {
+  padding: 30px;
+}
+
 @media (max-width: 992px) {
+  .destination-details .destination-form-row .accordion {
+    margin-top: 2em;
+    padding: 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  
   .destination-details-tabs .nav-link {
     border: 0;
     padding: 15px;
@@ -1327,7 +1360,7 @@ section {
   margin: 0 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .testimonials .testimonial-wrap {
     padding-left: 0;
   }
