@@ -56,8 +56,7 @@ const DestinationCarousel = () => {
                     <div className="country-content">
                       <h4>UK</h4>
                       <p>
-                        Magni qui quod omnis unde et eos fuga et exercitationem.
-                        Odio veritatis perspiciatis quaerat qui aut aut aut
+                      The nation has a long history of major contributions to the arts and sciences.
                       </p>
                     </div>
                   </div>
@@ -73,8 +72,7 @@ const DestinationCarousel = () => {
                   <div className="country-content">
                     <h4>Ireland</h4>
                     <p>
-                      Voluptas necessitatibus occaecati quia. Earum totam
-                      consequuntur qui porro et laborum toro des clara
+                    The world's biggest and best business have established key strategic research facilities.
                     </p>
                   </div>
                 </div>

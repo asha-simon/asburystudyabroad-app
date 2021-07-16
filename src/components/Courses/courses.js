@@ -2,36 +2,43 @@
 
 export const courseList = [
 {
+    id: 1, 
     courseName: "Accounting",
     image: "accounting.jpg"
     
 },
 {
+    id: 2,
     courseName: "Arts and Theatre Performance",
     image: "computer-science-2.jpg"
     
 },
 {
+    id: 3,
     courseName: "Engineering & Technology",
     image: "course-7.jpg"
     
 },
 {
+    id: 4,
     courseName: "Business",
     image: "business-management.jpg"
     
 },
 {
+    id: 5,
     courseName: "Law",
     image: "course-7.jpg"
     
 },
 {
+    id: 6,
     courseName: "Medical",
     image: "course-7.jpg"
     
 },
 {
+    id: 7,
     courseName: "Science",
     image: "course-7.jpg"
     
