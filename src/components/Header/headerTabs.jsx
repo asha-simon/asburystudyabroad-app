@@ -1,10 +1,24 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import logo from "../../assets/img/logo.png";
+import Navigation from "./navigation";
 
 const HeaderTabMenus = () => {
+
+  const [navVisible, setNavVisible] = useState(false);
+
+
+    useEffect(() => {
+      if(window.innerWidth < 992) {
+        setNavVisible(true);
+      } 
+    }, [])
+
   return (
     <>
       {/* Header */}
+      <button type="button" class={navVisible ? "mobile-nav-toggle" :"mobile-nav-toggle d-lg-none"}><i class="icofont-navigation-menu"></i></button>
       <header id="header" className="fixed-top">
         <div className="container d-flex align-items-center">
           {/* <h1 className="logo mr-auto">
@@ -37,6 +51,8 @@ const HeaderTabMenus = () => {
             </ul>
           </nav>
           {/* nav-menu  */}
+
+          {/* <Navigation/> */}
 
           <a href="courses.html" className="get-started-btn">
             Get Started

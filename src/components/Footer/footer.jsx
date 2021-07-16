@@ -1,7 +1,24 @@
 import React from "react";
+import { useState } from "react";
 import "../../assets/css/style.css";
 
 const Footer = () => {
+  const [showScroll, setShowScroll] = useState(false);
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 100){
+      setShowScroll(true)
+    } else if (showScroll && window.pageYOffset <= 100){
+      setShowScroll(false)
+    }
+  }
+
+  const backToTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
+  window.addEventListener('scroll', checkScrollTop)
+
   return (
     <>
       {/* <!-- ======= Footer ======= --> */}
@@ -119,8 +136,17 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <a href="#" className="back-to-top">
+      <a href="#" className={showScroll ? "back-to-top" : "back-to-top-hidden"}  onClick={backToTop}>
         <i className="bx bx-up-arrow-alt"></i>
+      </a>
+      {/* WhatsApp icon */}
+      <a
+        href="https://wa.me/917012894782"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
       </a>
       {/* <div id="preloader"></div> */}
       {/* <!-- End Footer --> */}
