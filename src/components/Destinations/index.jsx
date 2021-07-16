@@ -1,17 +1,24 @@
 import React from "react";
 import Footer from "../Footer/footer";
 import HeaderTabMenus from "../Header/headerTabs";
-import uk_img from "../../assets/img/countries/uk.jpg";
-import ireland_img from "../../assets/img/countries/ireland-dublin_2.jpg";
+import { destinationDetails } from "./destination";
 
-const Destinations = () => {
+const Destinations = ({ history }) => {
+ 
+ //let history = useHistory();
+
+ const gotoDestinationDetails = (e, details) => {
+       e.preventDefault();
+       history.push("/destination-details", details);
+ }
+
   return (
     <>
       <HeaderTabMenus />
       <main id="main" data-aos="fade-in">
         {/* <!-- ======= Breadcrumbs ======= --> */}
-        <div class="breadcrumbs">
-          <div class="container">
+        <div className="breadcrumbs">
+          <div className="container">
             <h2>Destinations</h2>
             <p>
               Est dolorum ut non facere possimus quibusdam eligendi voluptatem.
@@ -23,27 +30,28 @@ const Destinations = () => {
         {/* <!-- End Breadcrumbs --> */}
 
         {/* <!-- ======= Destinations Section ======= --> */}
-        <section id="destinations" class="destinations">
-          <div class="container" data-aos="fade-up">
-            <div class="row" data-aos="zoom-in" data-aos-delay="100">
-              <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
-                <div class="country">
-                  <img src={uk_img} class="img-fluid" alt="" />
-                  <div class="country-content">
-                    <a href="destination-details.html">
-                      <h4>Study in UK</h4>
-                    </a>
-                    <p>
-                    The nation has a long history of major contributions to the arts and sciences
-                    </p>
+        <section id="destinations" className="destinations">
+          <div className="container" data-aos="fade-up">
+            <div className="row" data-aos="zoom-in" data-aos-delay="100">
+              {destinationDetails.map((item, index) => (
+                <div className="col-lg-6 col-md-6 d-flex align-items-stretch">
+                  <div className="country">
+                    <img src={require(`../../assets/img/countries/${item.destination_img}`).default} className="img-fluid" alt="" />
+                    <div className="country-content">
+                      <a href="#" onClick={(e) => gotoDestinationDetails(e, item)}>
+                        <h4>Study in {item.country}</h4>
+                      </a>
+                      <p>
+                        {item.brief_note}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
-                <div class="country">
-                  <img src={ireland_img} class="img-fluid" alt="" />
-                  <div class="country-content">
+              ))}
+              {/* <div className="col-lg-6 col-md-6 d-flex align-items-stretch">
+                <div className="country">
+                  <img src={ireland_img} className="img-fluid" alt="" />
+                  <div className="country-content">
                     <a href="destination-details.html">
                       <h4>Study in Ireland</h4>
                     </a>
@@ -52,7 +60,7 @@ const Destinations = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

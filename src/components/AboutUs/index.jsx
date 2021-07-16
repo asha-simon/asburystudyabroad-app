@@ -10,8 +10,8 @@ const AboutUs = () => {
       <HeaderTabMenus />
       <main id="main">
         {/* <!-- ======= Breadcrumbs ======= --> */}
-        <div class="breadcrumbs" data-aos="fade-in">
-          <div class="container">
+        <div className="breadcrumbs" data-aos="fade-in">
+          <div className="container">
             <h2>About Us</h2>
             <p>
               Est dolorum ut non facere possimus quibusdam eligendi voluptatem.
@@ -23,22 +23,22 @@ const AboutUs = () => {
         {/* <!-- End Breadcrumbs --> */}
 
         {/* <!-- ======= About Section ======= --> */}
-        <section id="about" class="about">
-          <div class="container" data-aos="fade-up">
-            <div class="row">
+        <section id="about" className="about">
+          <div className="container" data-aos="fade-up">
+            <div className="row">
               <div
-                class="col-lg-6 order-1 order-lg-2"
+                className="col-lg-6 order-1 order-lg-2"
                 data-aos="fade-left"
                 data-aos-delay="100"
               >
-                <img src={about_img} class="img-fluid" alt="" />
+                <img src={about_img} className="img-fluid" alt="" />
               </div>
-              <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <h3>
                   Voluptatem dignissimos provident quasi corporis voluptates sit
                   assumenda.
                 </h3>
-                <p class="font-italic">
+                <p className="font-italic">
                   In order to provide proper guidance and support to the
                   students across the world who wish to come to UK for their
                   further studies, Asbury Study Abroad Ltd, incorporated in the

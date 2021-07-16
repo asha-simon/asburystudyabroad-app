@@ -37,3 +37,11 @@ export const courseList = [
     
 },
 ];
+
+//localhost
+// Site key: 6LcMrXAbAAAAAKKBhe7TJfrY8-fiE80ex6l6F4xX
+// Secret key: 6LcMrXAbAAAAAAKKf2R_deYgnF08SMpccJlEufcX
+
+
+// Site key: 6LdTWE8bAAAAAN6dh88ARJb7xl-r404INBqfZqAm
+// Secret key: 6LdTWE8bAAAAAI0iirgcHWXG_CPBih5ElTym6Gb0

@@ -2,6 +2,7 @@ import React from 'react';
 import MapContainer from '../../utils/MapContainer';
 import Footer from '../Footer/footer';
 import HeaderTabMenus from '../Header/headerTabs';
+import Icofont from 'react-icofont';
 
 
 const ContactUs = () => {
@@ -33,19 +34,22 @@ const ContactUs = () => {
           <div className="col-lg-4">
             <div className="info">
               <div className="address">
-                <i className="icofont-google-map"></i>
+              <Icofont icon="icofont-google-map"/>
+                {/* <i className="icofont-google-map"></i> */}
                 <h4>Location:</h4>
-                <p>53 Ernald Avenue, London, United Kingdom, E6 3AL</p>
+                {/* <p>53 Ernald Avenue, London, United Kingdom, E6 3AL</p> */}
               </div>
 
               <div className="email">
-                <i className="icofont-envelope"></i>
+              <Icofont icon="icofont-envelope"/>
+                {/* <i className="icofont-envelope"></i> */}
                 <h4>Email:</h4>
                 <p>asburyintl@gmail.com</p>
               </div>
 
               <div className="phone">
-                <i className="icofont-phone"></i>
+              <Icofont icon="icofont-phone"/>
+                {/* <i className="icofont-phone"></i> */}
                 <h4>Call:</h4>
                 <p>+44 7593 794424</p>
               </div>
@@ -72,7 +76,7 @@ const ContactUs = () => {
                 <div className="validate"></div>
               </div>
               <div className="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea className="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div className="validate"></div>
               </div>
               <div className="mb-3">

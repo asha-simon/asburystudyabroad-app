@@ -27,8 +27,10 @@ const MapContainer = () => {
 
   return (
     <LoadScript googleMapsApiKey={API_KEY}>
-      <GoogleMap mapContainerStyle={mapStyles} zoom={13} center={defaultCenter}>
-           <Marker position={defaultCenter} 
+      <GoogleMap mapContainerStyle={mapStyles} zoom={13} 
+      // center={defaultCenter}
+      >
+           {/* <Marker position={defaultCenter} 
            onClick={() => onSelect(item)}
           />;
         {
@@ -42,7 +44,7 @@ const MapContainer = () => {
               <p>{selected.name}</p>
             </InfoWindow>
             )
-         }
+         } */}
       </GoogleMap>
     </LoadScript>
   );

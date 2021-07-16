@@ -140,14 +140,14 @@ const Footer = () => {
         <i className="bx bx-up-arrow-alt"></i>
       </a>
       {/* WhatsApp icon */}
-      <a
+      {/* <a
         href="https://wa.me/917012894782"
-        class="whatsapp_float"
+        className="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fa fa-whatsapp whatsapp-icon"></i>
-      </a>
+        <i className="fa fa-whatsapp whatsapp-icon"></i>
+      </a> */}
       {/* <div id="preloader"></div> */}
       {/* <!-- End Footer --> */}
     </>
