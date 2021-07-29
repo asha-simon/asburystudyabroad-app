@@ -13,6 +13,10 @@ body {
   color: #444444;
 }
 
+#root {
+  height: 100vh;
+}
+
 a {
   color: #1a2640;
 }
@@ -325,29 +329,52 @@ h6 {
   }
 }
 
-/* Get Startet Button */
-.get-started-btn {
+.top-bar-link {
+  padding: 6px 20px !important;
+  background-color: #ffc32a !important;
+  border-radius: 10px !important;
+  margin: 0 0.5em;
+  font-weight: 500;
+}
+
+.top-bar-link a {
+  color: #0177c1 !important;
+}
+
+/* Login Button */
+#login-btn {
   margin-left: 22px;
   background: #0f3c4c;
   /* #1a2640; */
-  color: #fff36d;
+  color: #fff36d !important;
   /* #fff; */
   border-radius: 50px;
-  padding: 8px 25px;
+  padding: 6px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: 500;
-  display: inline-block;
+  display: flex;
+  align-self: center;
 }
 
-.get-started-btn:hover {
-  background: #82848e;
-  color: #fff;
+#login-btn:hover {
+  background: #82848e !important;
+  color: #fff !important;
 }
 
 @media (max-width: 768px) {
-  .get-started-btn {
+  .top-bar-link {
+    padding: 5px !important;
+    margin: 0;
+    border-radius: 6px !important;
+  }
+
+  .top-bar-link a {
+    font-size: 12px !important;
+  }
+
+  #login-btn {
     margin: 0 48px 0 0;
     padding: 6px 18px;
   }

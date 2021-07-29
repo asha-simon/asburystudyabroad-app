@@ -11,33 +11,33 @@ import { useHistory } from "react-router-dom";
 
 const HeaderTabMenus = () => {
   const [navVisible, setNavVisible] = useState(false);
-  let history  = useHistory();
-  const pathname = history.location.pathname.split('/').slice(1);
+  let history = useHistory();
+  const pathname = history.location.pathname.split("/").slice(1);
   const menuConfig = [
     {
-      name: 'Home',
-      key: 'home',
+      name: "Home",
+      key: "home",
     },
     {
-      name: 'About',
-      key: 'about-us',
+      name: "About",
+      key: "about-us",
     },
     {
-      name: 'Courses',
-      key: 'main-courses',    
+      name: "Courses",
+      key: "main-courses",
     },
     {
-      name: 'Destinations',
-      key: 'destinations',
+      name: "Destinations",
+      key: "destinations",
     },
     {
-      name: 'Services',
-      key: 'services',
+      name: "Services",
+      key: "services",
     },
     {
-      name: 'Contact Us',
-      key: 'contact-us'
-    }
+      name: "Contact Us",
+      key: "contact-us",
+    },
   ];
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const HeaderTabMenus = () => {
     <>
       {/* Header */}
       <Container fluid className="header-container fixed-top">
-        {console.log("pathname",history.location.pathname, pathname)}
+        {console.log("pathname", history.location.pathname, pathname)}
         <Container className="header-top social-links text-center text-md-left">
           <Row className="align-items-center">
             <Col>
@@ -85,15 +85,27 @@ const HeaderTabMenus = () => {
             </Col>
 
             <Col>
-            {/* WhatsApp icon */}
-              <a
-                href="https://wa.me/917012894782"
-                className="whatsapp_float"
-                target="_blank"
-                rel="noopener noreferrer"
+              <ListGroup
+                horizontal
+                className="align-items-center justify-content-around"
               >
-                <i className="fa fa-whatsapp whatsapp-icon"></i>+917012894782
-              </a>
+                <ListGroup.Item>
+                  {/* WhatsApp icon */}
+                  <a
+                    href="https://wa.me/917012894782"
+                    className="whatsapp_float"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa fa-whatsapp whatsapp-icon"></i>
+                    +917012894782
+                  </a>
+                </ListGroup.Item>
+
+                <ListGroup.Item className="top-bar-link">
+                  <a href="#">Book Free Counseling</a>
+                </ListGroup.Item>
+              </ListGroup>
             </Col>
           </Row>
         </Container>
@@ -119,12 +131,12 @@ const HeaderTabMenus = () => {
 
             <nav className="nav-menu d-none d-lg-block">
               <ul>
-                {menuConfig.map(menuItem => (
+                {menuConfig.map((menuItem) => (
                   <li className={pathname[0] === menuItem.key ? "active" : ""}>
-                  <a href={`/${menuItem.key}`}>{menuItem.name}</a>
-                </li>
+                    <a href={`/${menuItem.key}`}>{menuItem.name}</a>
+                  </li>
                 ))}
-                
+
                 {/* <li>
                   <a href="/about-us">About</a>
                 </li>
@@ -143,12 +155,10 @@ const HeaderTabMenus = () => {
               </ul>
             </nav>
             {/* nav-menu  */}
-
-            {/* <Navigation/> */}
-
-            <a href="courses.html" className="get-started-btn">
-              Get Started
+            <a href="/login" id="login-btn" className="login-btn">
+              Login
             </a>
+            {/* <Navigation/> */}
           </div>
         </header>
         {/* End Header */}
