@@ -35,33 +35,25 @@ const AboutUs = () => {
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <h3>
-                  Voluptatem dignissimos provident quasi corporis voluptates sit
-                  assumenda.
+                Who We Are ?
                 </h3>
-                <p className="font-italic">
-                  In order to provide proper guidance and support to the
-                  students across the world who wish to come to UK for their
-                  further studies, Asbury Study Abroad Ltd, incorporated in the
-                  UK. The proper advice is including but not limited to finding
-                  suitable course and university as per the students taste and
-                  attributes, filing the admission applications in the chosen
-                  universities, helping the students to write their personal
-                  statements, preparing them for the credibility interviews,
-                  verifying the documents for the CAS application, filing the
-                  visa application and arranging suitable accommodation.
-                </p>
-                <h3>OUR VISION</h3>
                 <p>
-                  Our knowledge in the educational system and immigration rules
-                  in the UK will help us to guide our students in a proper way
-                  to make their dream come true. Our specialty which stands out
-                  from other educational consultants is that we never stop
-                  supporting the students once they reached UK but extends our
-                  sincere support to them as and when required, including
-                  helping them to find out the part time jobs, and also for
-                  further visa extension, if the students are eligible in
-                  accordance with the applicable laws and regulations existing
-                  in the United Kingdom.
+                  Asbury Study Abroad Ltd, incorporated in the United Kingdom,
+                  to provide proper guidance and support to all International
+                  Students, who wish to pursue their higher education in the
+                  world-renowned Universities in United Kingdom and Ireland. We
+                  are committed to make your dream come true by giving you
+                  professional advice to choose your interested course and
+                  university. Our Knowledge in the UK job market, Educational
+                  and Immigration System, help us to reach that goal.
+                </p>
+                <h3>Our Vision</h3>
+                <p>
+                  To be most reliable in the educational consultancy world,
+                  providing 100% satisfaction to the students and parents who
+                  seek for high standard, job-oriented education for those
+                  students who seek high standard education from the Worlds
+                  renowned universities.
                 </p>
               </div>
             </div>
@@ -72,7 +64,7 @@ const AboutUs = () => {
         <TestimonialsCarousel />
       </main>
       {/* <!-- End #main --> */}
-      <Footer/>
+      <Footer />
     </>
   );
 };

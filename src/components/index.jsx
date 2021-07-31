@@ -30,17 +30,17 @@ const Home = () => {
                 <img src={aboutImg} className="img-fluid" alt="" />
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                <h3>
+                {/* <h3>
                   Voluptatem dignissimos provident quasi corporis voluptates sit
                   assumenda.
-                </h3>
-                <p className="font-italic">
+                </h3> */}
+                <p className="font-italic text-justify">
                   In order to provide proper guidance and support to the
                   students across the world who wish to come to UK for their
                   further studies, Asbury Study Abroad Ltd, incorporated in the
                   UK.
                 </p>
-                <p>
+                <p className="text-justify">
                   Our specialty which stands out from other educational
                   consultants is that we never stop supporting the students once
                   they reached UK but extends our sincere support to them as and
