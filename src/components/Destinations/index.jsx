@@ -8,8 +8,9 @@ const Destinations = ({ history }) => {
  //let history = useHistory();
 
  const gotoDestinationDetails = (e, details) => {
+       let data = { details, pathName: "destinations"}
        e.preventDefault();
-       history.push(`/destinations/${details.country}`, details);
+       history.push(`/destinations/${details.country}`, data);
  }
 
   return (
@@ -21,9 +22,7 @@ const Destinations = ({ history }) => {
           <div className="container">
             <h2>Destinations</h2>
             <p>
-              Est dolorum ut non facere possimus quibusdam eligendi voluptatem.
-              Quia id aut similique quia voluptas sit quaerat debitis. Rerum
-              omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.{" "}
+            “The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”― Dr. Seuss{" "}
             </p>
           </div>
         </div>
@@ -38,7 +37,7 @@ const Destinations = ({ history }) => {
                   <div className="country">
                     <img src={require(`../../assets/img/countries/${item.destination_img}`).default} className="img-fluid" alt="" />
                     <div className="country-content">
-                      <a href="#" onClick={(e) => gotoDestinationDetails(e, item)}>
+                      <a href="#" onClick={(e) => gotoDestinationDetails(e, item)}>           
                         <h4>Study in {item.country}</h4>
                       </a>
                       <p>

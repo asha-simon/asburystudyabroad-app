@@ -66,11 +66,17 @@ const Home = () => {
                 <div className="content">
                   <h3>Why Asbury?</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor in reprehenderit Asperiores
                     dolores sed et. Tenetur quia eos. Autem tempore quibusdam
-                    vel necessitatibus optio ad corporis.
+                    vel necessitatibus optio ad corporis. */}
+                    We are committed to make your dream come true by giving you professional advice to choose your interested course and university.
+                    <ul>
+                      <li>Has representation over 120 universities across UK and Ireland.</li>
+                      <li>Globally recognized courses</li>
+                      <li>Advice on document preparation; CV and Statement of Purpose (SOP)</li>
+                    </ul>
                   </p>
                   <div className="text-center">
                     <a href="/about-us" className="more-btn">
@@ -89,27 +95,28 @@ const Home = () => {
                     <div className="col-xl-4 d-flex align-items-stretch">
                       <div className="icon-box mt-4 mt-xl-0">
                         <i className="bx bx-receipt"></i>
-                        <h4>120 universities across UK and Ireland</h4>
+                        <h4>Admission Processing</h4>
                         <p>
-                        Professional & Expert Consultation to choose best course and university
+                        Professional and expert consultation to choose best course and university.
                         </p>
                       </div>
                     </div>
                     <div className="col-xl-4 d-flex align-items-stretch">
                       <div className="icon-box mt-4 mt-xl-0">
                         <i className="bx bx-cube-alt"></i>
-                        <h4>Ullamco laboris ladore pan</h4>
+                        <h4>Career counselling</h4>
                         <p>
-                        Advice on document preparation; CV & Statement of Purpose (SOP)
+                        Our counselling will be based on our understanding on the existing laws, educational systems, and job market.
                         </p>
                       </div>
                     </div>
                     <div className="col-xl-4 d-flex align-items-stretch">
                       <div className="icon-box mt-4 mt-xl-0">
                         <i className="bx bx-images"></i>
-                        <h4>Labore consequatur</h4>
+                        <h4>Visa & Immigration Support</h4>
                         <p>
-                        Experienced lawyers handling visa processing
+                        Our experienced lawyers handling the visa processing and
+                        timely advice on all immigration queries.
                         </p>
                       </div>
                     </div>

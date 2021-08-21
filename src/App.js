@@ -17,6 +17,8 @@ import DestinationDetails from "./components/Destinations/destination-details";
 import Services from "./components/Services";
 import Login from "./components/Login/login";
 import Signup from "./components/Login/sign-up";
+import { ToastProvider } from 'react-toast-notifications';
+
 
 function App() {
   useEffect(() => {
@@ -28,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <ToastProvider>
       <Router>
         <Switch>
           <Route exact path="/login" component={Login}/>
@@ -44,7 +46,7 @@ function App() {
           <Route exact path="/main-courses/:id" component={SubCourseList}/>
         </Switch>
       </Router>
-    </>
+      </ToastProvider>
   );
 }
 

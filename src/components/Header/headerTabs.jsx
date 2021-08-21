@@ -1,18 +1,21 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../assets/img/logo.png";
 import Navigation from "./navigation";
 import { useHistory } from "react-router-dom";
+import EnquiryFormModal from "../../utils/EnquiryForm/enquiry-form-modal";
 
 const HeaderTabMenus = () => {
   const [navVisible, setNavVisible] = useState(false);
   let history = useHistory();
   const pathname = history.location.pathname.split("/").slice(1);
+  const [modalShow, setModalShow] = useState(false);
+
   const menuConfig = [
     {
       name: "Home",
@@ -40,6 +43,13 @@ const HeaderTabMenus = () => {
     },
   ];
 
+  // const disableContactBtn = () => {
+  //   console.log("state", (pathname[0] !== "destinations" && (!(pathname.includes("Ireland")) || !(pathname.includes("UK")))) )
+  //   if (pathname[0] !== "destinations" && (!(pathname.includes("Ireland")) || !(pathname.includes("UK")))) {
+  //     setModalShow(true)
+  //   }
+  // }
+
   useEffect(() => {
     if (window.innerWidth < 992) {
       setNavVisible(true);
@@ -50,37 +60,45 @@ const HeaderTabMenus = () => {
     <>
       {/* Header */}
       <Container fluid className="header-container fixed-top">
-        {console.log("pathname", history.location.pathname, pathname)}
         <Container className="header-top social-links text-center text-md-left">
           <Row className="align-items-center">
             <Col>
               <ListGroup horizontal>
-                <ListGroup.Item>
+                {/* <ListGroup.Item>
                   <a href="#" className="twitter">
                     <i className="bx bxl-twitter"></i>
                   </a>
-                </ListGroup.Item>
+                </ListGroup.Item> */}
                 <ListGroup.Item>
-                  <a href="#" className="facebook">
+                  <a
+                    href="https://www.facebook.com/AsburyUK-114425360888142"
+                    className="facebook"
+                  >
                     <i className="bx bxl-facebook"></i>
                   </a>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   {" "}
-                  <a href="#" className="instagram">
+                  <a
+                    href="https://www.instagram.com/asbury.uk/"
+                    className="instagram"
+                  >
                     <i className="bx bxl-instagram"></i>
                   </a>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <a href="#" className="google-plus">
-                    <i className="bx bxl-skype"></i>
+                  <a
+                    href="https://www.youtube.com/channel/UCf-YLLLsX1aBJ_FrsleR_BA"
+                    className="youtube"
+                  >
+                    <i className="bx bxl-youtube"></i>
                   </a>
                 </ListGroup.Item>
-                <ListGroup.Item>
+                {/* <ListGroup.Item>
                   <a href="#" className="linkedin">
                     <i className="bx bxl-linkedin"></i>
                   </a>
-                </ListGroup.Item>
+                </ListGroup.Item> */}
               </ListGroup>
             </Col>
 
@@ -92,19 +110,23 @@ const HeaderTabMenus = () => {
                 <ListGroup.Item>
                   {/* WhatsApp icon */}
                   <a
-                    href="https://wa.me/917012894782"
+                    href="https://wa.me/447593794424"
                     className="whatsapp_float"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <i className="fa fa-whatsapp whatsapp-icon"></i>
-                    +917012894782
+                    +447593794424
                   </a>
                 </ListGroup.Item>
 
+                {pathname[0] !== "destinations" && (
                 <ListGroup.Item className="top-bar-link">
-                  <a href="#">Book Free Counseling</a>
+                  <a href="#" onClick={() =>{setModalShow(true)}}>
+                    Book Free Counseling
+                  </a>
                 </ListGroup.Item>
+                 )}
               </ListGroup>
             </Col>
           </Row>
@@ -136,32 +158,17 @@ const HeaderTabMenus = () => {
                     <a href={`/${menuItem.key}`}>{menuItem.name}</a>
                   </li>
                 ))}
-
-                {/* <li>
-                  <a href="/about-us">About</a>
-                </li>
-                <li>
-                  <a href="/main-courses">Courses</a>
-                </li>
-                <li>
-                  <a href="/destinations">Destinations</a>
-                </li>
-                <li>
-                  <a href="/services">Services</a>
-                </li>
-                <li>
-                  <a href="/contact-us">Contact Us</a>
-                </li> */}
               </ul>
             </nav>
             {/* nav-menu  */}
-            <a href="/login" id="login-btn" className="login-btn">
+            {/* <a href="/login" id="login-btn" className="login-btn">
               Login
-            </a>
+            </a> */}
             {/* <Navigation/> */}
           </div>
         </header>
         {/* End Header */}
+        <EnquiryFormModal show={modalShow} onHide={() => setModalShow(false)} />
       </Container>
     </>
   );

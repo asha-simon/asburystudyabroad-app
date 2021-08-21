@@ -14,9 +14,7 @@ const AboutUs = () => {
           <div className="container">
             <h2>About Us</h2>
             <p>
-              Est dolorum ut non facere possimus quibusdam eligendi voluptatem.
-              Quia id aut similique quia voluptas sit quaerat debitis. Rerum
-              omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.{" "}
+            "The world is full of wonderful things you haven’t seen yet. Don’t ever give up on the chance of seeing them."- J.K. Rowling{" "}
             </p>
           </div>
         </div>
