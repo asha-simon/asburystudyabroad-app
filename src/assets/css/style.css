@@ -383,7 +383,7 @@ h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  top: 17px;
+  top: 100px;
   right: 15px;
   z-index: 9998;
   border: 0;
@@ -395,27 +395,32 @@ h6 {
   cursor: pointer;
   text-align: right;
   color: #37423b !important;
-  visibility: hidden;
+  display: none;
 }
 
 .mobile-nav-toggle i {
   color: #37423b;
 }
 
+.navbar-toggler-icon{
+  text-align: center;
+}
+
 .mobile-nav {
   position: fixed;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  /* bottom: 15px; */
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: #0f3c4c;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
   border-radius: 10px;
   padding: 10px 0;
+  text-align: center;
 }
 
 .mobile-nav * {
@@ -427,16 +432,21 @@ h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #37423b;
-  padding: 10px 20px;
+  color: #fff;
+  padding: 10px 40px;
   font-weight: 500;
   outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+.mobile-nav ul li:last-child a {
+  border: none;
 }
 
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #1a2640;
+  color: #fff36d !important;
   text-decoration: none;
 }
 
@@ -489,6 +499,34 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .close-active {
+    position: fixed;
+    top: 17px;
+    right: 15px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px !important;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+    color: #fff;
+  }
+
+  .mobile-nav-toggle, .mobile-nav-overly {
+    display: inline-block;
+  }
+  
+  .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -636,6 +674,7 @@ section {
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 127px;
+    padding: 45px 0 30px;
   }
 }
 
@@ -1229,7 +1268,7 @@ section {
 
 @media (max-width: 1200px) {
   .contact-form {
-   width: 100% !important;
+    width: 100% !important;
   }
 }
 
@@ -1260,7 +1299,8 @@ section {
 }
 
 @media only screen and (max-width: 576px) {
-  .contact-form, .destination-details .destination-form-row .accordion {
+  .contact-form,
+  .destination-details .destination-form-row .accordion {
     width: 100% !important;
   }
   .g-recaptcha {

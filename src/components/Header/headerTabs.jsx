@@ -6,42 +6,41 @@ import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import { useState, useEffect } from "react";
 import logo from "../../assets/img/logo.png";
-import Navigation from "./navigation";
 import { useHistory } from "react-router-dom";
 import EnquiryFormModal from "../../utils/EnquiryForm/enquiry-form-modal";
 
+export const menuConfig = [
+  {
+    name: "Home",
+    key: "home",
+  },
+  {
+    name: "About",
+    key: "about-us",
+  },
+  {
+    name: "Courses",
+    key: "main-courses",
+  },
+  {
+    name: "Destinations",
+    key: "destinations",
+  },
+  {
+    name: "Services",
+    key: "services",
+  },
+  {
+    name: "Contact Us",
+    key: "contact-us",
+  },
+];
+
 const HeaderTabMenus = () => {
-  const [navVisible, setNavVisible] = useState(false);
+  const [navMenuOpen, setNavMenuOpen] = useState(false);
   let history = useHistory();
   const pathname = history.location.pathname.split("/").slice(1);
   const [modalShow, setModalShow] = useState(false);
-
-  const menuConfig = [
-    {
-      name: "Home",
-      key: "home",
-    },
-    {
-      name: "About",
-      key: "about-us",
-    },
-    {
-      name: "Courses",
-      key: "main-courses",
-    },
-    {
-      name: "Destinations",
-      key: "destinations",
-    },
-    {
-      name: "Services",
-      key: "services",
-    },
-    {
-      name: "Contact Us",
-      key: "contact-us",
-    },
-  ];
 
   // const disableContactBtn = () => {
   //   console.log("state", (pathname[0] !== "destinations" && (!(pathname.includes("Ireland")) || !(pathname.includes("UK")))) )
@@ -50,11 +49,12 @@ const HeaderTabMenus = () => {
   //   }
   // }
 
-  useEffect(() => {
-    if (window.innerWidth < 992) {
-      setNavVisible(true);
-    }
-  }, []);
+
+  // useEffect(() => {
+  //   if (window.innerWidth < 992) {
+  //     setNavVisible(true);
+  //   }
+  // }, []);
 
   return (
     <>
@@ -121,25 +121,22 @@ const HeaderTabMenus = () => {
                 </ListGroup.Item>
 
                 {pathname[0] !== "destinations" && (
-                <ListGroup.Item className="top-bar-link">
-                  <a href="#" onClick={() =>{setModalShow(true)}}>
-                    Book Free Counseling
-                  </a>
-                </ListGroup.Item>
-                 )}
+                  <ListGroup.Item className="top-bar-link">
+                    <a
+                      href="#"
+                      onClick={() => {
+                        setModalShow(true);
+                      }}
+                    >
+                      Book Free Counseling
+                    </a>
+                  </ListGroup.Item>
+                )}
               </ListGroup>
             </Col>
           </Row>
         </Container>
 
-        <button
-          type="button"
-          className={
-            navVisible ? "mobile-nav-toggle" : "mobile-nav-toggle d-lg-none"
-          }
-        >
-          <i className="icofont-navigation-menu"></i>
-        </button>
         <header id="header">
           <div className="container d-flex align-items-center">
             {/* <h1 className="logo mr-auto">
@@ -147,7 +144,7 @@ const HeaderTabMenus = () => {
           </h1> */}
             {/* Uncomment below if you prefer to use an image logo  */}
 
-            <a href="index.html" className="logo mr-auto">
+            <a href="/home" className="logo mr-auto">
               <img src={logo} alt="" className="img-fluid" />
             </a>
 
@@ -164,10 +161,27 @@ const HeaderTabMenus = () => {
             {/* <a href="/login" id="login-btn" className="login-btn">
               Login
             </a> */}
-            {/* <Navigation/> */}
+            <button type="button" className="mobile-nav-toggle" onClick={() => setNavMenuOpen(!navMenuOpen)}>
+              <i className="icofont-navigation-menu"></i>
+            </button>
           </div>
         </header>
         {/* End Header */}
+      {navMenuOpen && (
+      <nav className="mobile-nav d-lg-none">
+                    <button type="button" className="close-active" onClick={() => setNavMenuOpen(!navMenuOpen)}>
+              <i className="icofont-close"></i>
+            </button>
+              <ul>
+                {menuConfig.map((menuItem) => (
+                  <li className={pathname[0] === menuItem.key ? "active" : ""}>
+                    <a href={`/${menuItem.key}`}>{menuItem.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            )}
+        {navMenuOpen && ( <div class="mobile-nav-overly"></div>)}
         <EnquiryFormModal show={modalShow} onHide={() => setModalShow(false)} />
       </Container>
     </>
