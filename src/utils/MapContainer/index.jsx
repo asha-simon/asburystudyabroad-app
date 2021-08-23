@@ -1,7 +1,8 @@
 import { React, useState }from "react";
 import { GoogleMap, InfoWindow, LoadScript, Marker } from "@react-google-maps/api";
 
-const API_KEY = "AIzaSyCCOko4xsdFUb_a47hJJwzPsie043gujc4";
+const API_KEY = "AIzaSyDwG1AzpeIkEuy4tlZWk88AVsALmMFKgkQ";
+// "AIzaSyCCOko4xsdFUb_a47hJJwzPsie043gujc4";
 
 const MapContainer = () => {
   const mapStyles = {
@@ -28,7 +29,7 @@ const MapContainer = () => {
   return (
     <LoadScript googleMapsApiKey={API_KEY}>
       <GoogleMap mapContainerStyle={mapStyles} zoom={13} 
-      // center={defaultCenter}
+      center={defaultCenter}
       >
            {/* <Marker position={defaultCenter} 
            onClick={() => onSelect(item)}
