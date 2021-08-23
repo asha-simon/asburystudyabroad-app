@@ -1414,6 +1414,14 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.testimonials h2 {
+  color: #37423b;
+}
+
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
@@ -1473,6 +1481,12 @@ section {
   margin: 15px auto 15px auto;
 }
 
+.testimonials .video-conatiner video {
+  width: 540px;
+  object-fit: cover;
+  padding: 28px 50px;
+}
+
 .testimonials .owl-nav,
 .testimonials .owl-dots {
   margin-top: 5px;
@@ -1501,6 +1515,15 @@ section {
   .testimonials .testimonial-wrap {
     padding-left: 0;
   }
+  .testimonials .video-conatiner video {
+    width: 100%;
+    padding: 0;
+  }
+
+  .testimonials .owl-item {
+    margin-top: 2.5em;
+  }
+
   .testimonials .testimonial-item {
     padding: 30px;
     margin: 15px;
