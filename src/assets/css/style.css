@@ -130,6 +130,9 @@ h6 {
 .header-container {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.header-container .header-top-row {
   background: #1c3180;
 }
 
@@ -164,8 +167,17 @@ h6 {
   margin-right: 4px;
 }
 
-#header {
+.header-container .header-bg-dark {
   background: #2596be;
+  background-image: none;
+}
+
+.header-container .header-bg-light {
+  /* background: rgba(0, 0, 0, 0.5) */
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+}
+
+#header {
   /* #F1F1F1; */
   /* #1d7ada; */
   /* #fff; */
@@ -184,6 +196,8 @@ h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 #header .logo a {
@@ -192,13 +206,38 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 60px;
+  /* max-height: 60px; */
   border-radius: 50%;
+}
+
+#header .logo .logo-large {
+  height: 180px;
+  background: none;
+}
+
+#header .logo .logo-small {
+  height: 70px;
+  background: rgba(255,255,255,0.5);
+}
+
+#header .row {
+  width: 100%;
 }
 
 @media (max-width: 992px) {
   #header .logo {
     font-size: 28px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    background: #2596be;
+  }
+
+  #header .logo img {
+    max-height: 70px;
   }
 }
 
@@ -235,7 +274,6 @@ h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #fff !important;
   /* #37423b; */
   transition: 0.3s;
   font-size: 15px;
@@ -243,10 +281,30 @@ h6 {
   font-weight: 500;
 }
 
-.nav-menu a:hover,
+/* .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
   color: #fff36d !important;
+} */
+
+.light-font a {
+  color: #fff !important;
+}
+
+.light-font a:hover,
+.light-font .active > a,
+.light-font li:hover > a {
+  color: #fff36d !important;
+}
+
+.dark-font a {
+  color: #007bff;
+}
+
+.dark-font a:hover,
+.dark-font .active > a,
+.dark-font li:hover > a {
+  color: #0056b3;
 }
 
 .nav-menu .drop-down ul {
@@ -383,7 +441,7 @@ h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  top: 100px;
+  top: 110px;
   right: 15px;
   z-index: 9998;
   border: 0;
@@ -402,7 +460,7 @@ h6 {
   color: #37423b;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   text-align: center;
 }
 
@@ -518,15 +576,21 @@ h6 {
     color: #fff;
   }
 
-  .mobile-nav-toggle, .mobile-nav-overly {
+  .mobile-nav-toggle,
+  .mobile-nav-overly {
     display: inline-block;
   }
-  
+
   .mobile-nav {
     opacity: 1;
     visibility: visible;
   }
+}
 
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    top: 80px;
+  }
 }
 
 /*--------------------------------------------------------------
