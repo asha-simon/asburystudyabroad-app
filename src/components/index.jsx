@@ -182,7 +182,7 @@ const Home = () => {
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                 <a
-                  href="course-details.html"
+                  href="#"
                   style={{ width: "100%", height: "100%" }}
                 >
                   <div

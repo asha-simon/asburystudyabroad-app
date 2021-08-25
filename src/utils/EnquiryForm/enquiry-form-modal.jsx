@@ -11,19 +11,19 @@ const EnquiryFormModal = (props) => {
 
   
   const handleSubmitBtn = () => {
-    handleSubmit();
+     handleSubmit();
     for (const form of document.getElementsByTagName("form")) {
       form.reset();
     }
   };
 
-  useEffect(() => {
-    if (state.succeeded) {
-      addToast("Thank You, Our team will contact you soon...!", {
-        appearance: "success",
-      });
-    }
-  }, [addToast, state.succeeded]);
+  // useEffect(() => {
+  //   if (state.succeeded) {
+  //     addToast("Thank You, Our team will contact you soon...!", {
+  //       appearance: "success",
+  //     });
+  //   }
+  // }, [addToast, state.succeeded]);
 
   return (
     <>

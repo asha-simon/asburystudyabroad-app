@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 import logo from "../../assets/img/logo_no_bg.png";
 import { useHistory } from "react-router-dom";
 import EnquiryFormModal from "../../utils/EnquiryForm/enquiry-form-modal";
-import TopNavBar from "./top-nav-bar";
 
 export const menuConfig = [
   {

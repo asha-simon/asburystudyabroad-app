@@ -183,7 +183,7 @@ h6 {
   /* #fff; */
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 8px 0;
   box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
 }
 
@@ -196,8 +196,6 @@ h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: center;
 }
 
 #header .logo a {
@@ -224,12 +222,12 @@ h6 {
   width: 100%;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   #header .logo {
     font-size: 28px;
     justify-content: flex-start;
   }
-}
+} */
 
 @media (max-width: 768px) {
   #header {
@@ -1479,7 +1477,8 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(241, 241, 241);
+  /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .testimonials h2 {
