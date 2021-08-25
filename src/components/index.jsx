@@ -140,7 +140,7 @@ const Home = () => {
             <div className="row" data-aos="zoom-in" data-aos-delay="100">
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                 <a
-                  href="course-details.html"
+                  href="#"
                   style={{ width: "100%", height: "100%" }}
                 >
                   <div
@@ -161,7 +161,7 @@ const Home = () => {
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                 <a
-                  href="course-details.html"
+                  href="#"
                   style={{ width: "100%", height: "100%" }}
                 >
                   <div
