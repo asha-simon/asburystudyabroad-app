@@ -79,7 +79,7 @@ const TestimonialsCarousel = () => {
                   </div>
                 </div>
 
-                <div className="testimonial-wrap">
+                {/* <div className="testimonial-wrap">
                   <div className="testimonial-item">
                     <img
                       src={testimonials_2}
@@ -97,26 +97,7 @@ const TestimonialsCarousel = () => {
                       <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                   </div>
-                </div>
-
-                <div className="testimonial-wrap">
-                  <div className="testimonial-item">
-                    <img
-                      src={testimonials_3}
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Enim nisi quem export duis labore cillum quae magna enim
-                      sint quorum nulla quem veniam duis minim tempor labore
-                      quem eram duis noster aute amet eram fore quis sint minim.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
+                </div> */}
               </OwlCarousel>
             </Col>
           </Row>
