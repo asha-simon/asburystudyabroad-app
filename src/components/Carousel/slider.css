@@ -17,6 +17,25 @@
       }
 }
 
+@media screen and (max-width: 992px) {
+  .carousel-slide {
+    height: 100%;
+  }
+
+  .carousel-inner {
+    height: 100%;
+  }
+
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel {
     height: 100%;

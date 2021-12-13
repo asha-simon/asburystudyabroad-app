@@ -14,8 +14,7 @@ const AboutUs = () => {
           <div className="container">
             <h2>About Us</h2>
             <p>
-            "The world is full of wonderful things you haven’t seen yet. Don’t ever give up on the chance of seeing them."- J.K. Rowling{" "}
-            </p>
+              “How much better is to get wisdom than gold! And to get understanding rather to be chosen than silver”  - Bible            </p>
           </div>
         </div>
         {/* <!-- End Breadcrumbs --> */}
@@ -33,17 +32,13 @@ const AboutUs = () => {
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <h3>
-                Who We Are ?
+                  Who We Are ?
                 </h3>
-                <p>
-                  Asbury Study Abroad Ltd, incorporated in the United Kingdom,
-                  to provide proper guidance and support to all International
-                  Students, who wish to pursue their higher education in the
-                  world-renowned Universities in United Kingdom and Ireland. We
-                  are committed to make your dream come true by giving you
-                  professional advice to choose your interested course and
-                  university. Our Knowledge in the UK job market, Educational
-                  and Immigration System, help us to reach that goal.
+                <p>          
+                  Asbury is a group name for the educational consultants such as Asbury Study Abroad Ltd (incorporated in the United Kingdom) and Asbury International (incorporated in the Republic of India).
+                  We provide proper guidance and support to all International Students, who wish to pursue their higher education in the world-renowned Universities in United Kingdom and Ireland.
+                  We are committed to make your dream come true by giving you professional advice to choose your interested course and university.
+                  Our Knowledge in the UK job market, Educational and Immigration System, help us to reach that goal. 
                 </p>
                 <h3>Our Vision</h3>
                 <p>
@@ -52,6 +47,10 @@ const AboutUs = () => {
                   seek for high standard, job-oriented education for those
                   students who seek high standard education from the Worlds
                   renowned universities.
+                </p>
+                <h3>Our Mission</h3>
+                <p>
+                  Our mission is to fulfill your vision.
                 </p>
               </div>
             </div>

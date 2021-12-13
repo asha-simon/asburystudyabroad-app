@@ -48,23 +48,29 @@ const ContactUs = () => {
             <div className="row mt-5">
               <div className="col-lg-4">
                 <div className="info">
-                  {/* <div className="address"> */}
-                  {/* <Icofont icon="icofont-google-map"/> */}
-                  {/* <i className="icofont-google-map"></i> */}
-                  {/* <h4>Location:</h4> */}
-                  {/* <p>53 Ernald Avenue, London, United Kingdom, E6 3AL</p> */}
-                  {/* </div> */}
+                  <div className="address">
+                    <Icofont icon="icofont-google-map" />
+                    {/* <i className="icofont-google-map"></i> */}
+                    <h4>Location:</h4>
+                    <p>Puliyazhikathu Building,
+                      326/2 Pulamon,
+                      Kottarakara,
+                      Kollam,
+                      Kerala,
+                      India 691531</p>
+                  </div>
+
 
                   <div className="email">
                     <Icofont icon="icofont-envelope" />
                     <h4>Email:</h4>
-                    <p>admissions@asburystudyabroad.co.uk</p>
+                    <p><a href="mailto:admissions@asburystudyabroad.co.uk">admissions@asburystudyabroad.co.uk</a></p>
                   </div>
 
                   <div className="phone">
                     <Icofont icon="icofont-phone" />
                     <h4>Call:</h4>
-                    <p>+44 7593 794424</p>
+                    <p><a href="tel: +917012052751">+91 70120 52751</a></p>
                   </div>
                 </div>
               </div>
@@ -100,7 +106,7 @@ const ContactUs = () => {
                         data-msg="Please enter a valid email"
                         required
                       />
-                        <ValidationError
+                      <ValidationError
                         prefix="Email"
                         field="email"
                         errors={state.errors}
@@ -118,7 +124,7 @@ const ContactUs = () => {
                       data-msg="Please enter at least 8 chars of subject"
                       required
                     />
-                   <ValidationError
+                    <ValidationError
                       prefix="Subject"
                       field="subject"
                       errors={state.errors}

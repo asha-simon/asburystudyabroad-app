@@ -32,6 +32,7 @@ const EnquiryFormModal = (props) => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
         backdrop="static"
+        size="lg"
       >
         <Modal.Header closeButton>
           <Modal.Title>Talk to our expert</Modal.Title>
@@ -79,7 +80,7 @@ const EnquiryFormModal = (props) => {
                 name="message"
                 placeholder="Message"
                 className="contact-form-control"
-                rows="3"
+                rows="5"
               />
               <ValidationError
                 prefix="Message"

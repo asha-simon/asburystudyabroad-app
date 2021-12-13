@@ -2,11 +2,20 @@
   background: rgb(241, 241, 241) !important;
 }
 
+.modal-header {
+  padding: 2rem !important;
+  align-items: center;
+}
+
 .modal-header .modal-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 30px;
   color: #2596be;
+}
+
+.modal-header .close {
+  font-size: 2rem;
 }
 
 .modal form {
@@ -17,13 +26,17 @@
   align-items: center;
 }
 
+.modal-body {
+padding: 2rem 1rem !important;
+}
+
 .modal-body .form-group {
   width: 100%;
 }
 
 .modal-body .form-group input,
 .modal-body .form-group textarea {
-  width: 70%;
+  width: 75%;
   background: #ffffff;
   border-radius: 3px;
   border: 1px solid #fff;
@@ -40,12 +53,37 @@
 }
 
 .modal-body button {
-  width: 80%;
+  width: 75%;
   background: #0f3c4c;
   border: none;
   margin-top: 1em;
+  padding: 12px 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .modal-body button:hover {
   background: #82848e;
+}
+
+
+@media screen and (max-width: 532px) {
+
+  .modal-header {
+   padding: 1rem 1rem !important;
+  }
+
+  .modal-header .modal-title {
+    font-size: 26px;
+  }
+
+  .modal-body .form-group input,
+  .modal-body .form-group textarea {
+    width: 90%;
+  }
+
+  .modal-body button {
+    width: 90%;
+  }
 }

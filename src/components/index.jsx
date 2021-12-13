@@ -35,19 +35,16 @@ const Home = () => {
                   assumenda.
                 </h3> */}
                 <p className="font-italic text-justify">
-                  In order to provide proper guidance and support to the
-                  students across the world who wish to come to UK for their
-                  further studies, Asbury Study Abroad Ltd, incorporated in the
-                  UK.
+                Asbury is an educational consultants based in United Kingdom with sister partnerships in India.
+                We provide support and advice to students to enroll at Universities in United Kingdom of Great Britain and Northern Ireland.
                 </p>
                 <p className="text-justify">
-                  Our specialty which stands out from other educational
-                  consultants is that we never stop supporting the students once
-                  they reached UK but extends our sincere support to them as and
-                  when required, including helping them to find out the part
-                  time jobs, and also for further visa extension, if the
-                  students are eligible in accordance with the applicable laws
-                  and regulations existing in the United Kingdom.{" "}
+                  Our mission is to fulfill your goal.
+                  We are committed to provide timely and professional support for all our students so that their journey to further education make simple and easy.
+                  We understand that most of the students are in dilemma to choose their career after the completion of their plus two education and/or graduation.
+                  Here, we can give our expert advice to students based on our knowledge and experience in the existing job market/ shortlisted jobs in UK & Ireland.
+                  We will handle each application with utmost care and give full support and advice during any time of the application process.
+                  We take it as a challenge to get admission in your chosen course and university.{" "}
                 </p>
                 <a href="/about-us" className="learn-more-btn">
                   Learn More
@@ -97,7 +94,7 @@ const Home = () => {
                         <i className="bx bx-receipt"></i>
                         <h4>Admission Processing</h4>
                         <p>
-                        Professional and expert consultation to choose best course and university.
+                          Professional and expert consultation to choose best course and university.
                         </p>
                       </div>
                     </div>
@@ -106,7 +103,7 @@ const Home = () => {
                         <i className="bx bx-cube-alt"></i>
                         <h4>Career counselling</h4>
                         <p>
-                        Our counselling will be based on our understanding on the existing laws, educational systems, and job market.
+                          Our counselling will be based on our understanding on the existing laws, educational systems, and job market.
                         </p>
                       </div>
                     </div>
@@ -115,8 +112,8 @@ const Home = () => {
                         <i className="bx bx-images"></i>
                         <h4>Visa & Immigration Support</h4>
                         <p>
-                        Our experienced lawyers handling the visa processing and
-                        timely advice on all immigration queries.
+                          Our experienced lawyers handling the visa processing and
+                          timely advice on all immigration queries.
                         </p>
                       </div>
                     </div>
@@ -138,10 +135,30 @@ const Home = () => {
             </div>
 
             <div className="row" data-aos="zoom-in" data-aos-delay="100">
+            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <a
+                  href="#"
+                  style={{ width: "100%", height: "100%", cursor: 'default' }}
+                >
+                  <div
+                    className="course-item d-flex"
+                    style={{
+                      background: `url(${cmptrscienceBckgdImg}) no-repeat`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "50% 50%",
+                    }}
+                  >
+                    <div className="course-content" style={{ opacity: '1', cursor: 'default'}}>
+                      <h4>Engineering & Technology</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              {/* <!-- End Course Item--> */}
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                 <a
                   href="#"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%", height: "100%", cursor: 'default' }}
                 >
                   <div
                     className="course-item d-flex"
@@ -151,7 +168,7 @@ const Home = () => {
                       backgroundPosition: "50% 50%",
                     }}
                   >
-                    <div className="course-content">
+                    <div className="course-content" style={{ opacity: '1', cursor: 'default'}}>
                       <h4>Accounting</h4>
                     </div>
                   </div>
@@ -162,7 +179,7 @@ const Home = () => {
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                 <a
                   href="#"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%", height: "100%", cursor: 'default' }}
                 >
                   <div
                     className="course-item d-flex"
@@ -172,29 +189,8 @@ const Home = () => {
                       backgroundPosition: "50% 50%",
                     }}
                   >
-                    <div className="course-content">
+                    <div className="course-content" style={{ opacity: '1', cursor: 'default'}}>
                       <h4>Business Management</h4>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              {/* <!-- End Course Item--> */}
-
-              <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                <a
-                  href="#"
-                  style={{ width: "100%", height: "100%" }}
-                >
-                  <div
-                    className="course-item d-flex"
-                    style={{
-                      background: `url(${cmptrscienceBckgdImg}) no-repeat`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "50% 50%",
-                    }}
-                  >
-                    <div className="course-content">
-                      <h4>Computer Science</h4>
                     </div>
                   </div>
                 </a>
@@ -208,7 +204,7 @@ const Home = () => {
         </section>
         {/* <!-- End Popular Courses Section --> */}
 
-        <DestinationCarousel/>
+        <DestinationCarousel />
       </main>
       <Footer />
     </>

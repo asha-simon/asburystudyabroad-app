@@ -5,7 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import { useState, useEffect } from "react";
-import logo from "../../assets/img/logo_no_bg.png";
+import logo from "../../assets/img/cropped_logo.png";
+import logo1 from "../../assets/img/logo_no_bg.png";
 import { useHistory } from "react-router-dom";
 import EnquiryFormModal from "../../utils/EnquiryForm/enquiry-form-modal";
 
@@ -127,16 +128,17 @@ const HeaderTabMenus = () => {
                   horizontal
                   className="align-items-center justify-content-around"
                 >
-                  <ListGroup.Item>
+                  <ListGroup.Item className="top-bar-whatsapp">
                     {/* WhatsApp icon */}
                     <a
-                      href="https://wa.me/447593794424"
+                      href="https://wa.me/917012052751"
                       className="whatsapp_float"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className="fa fa-whatsapp whatsapp-icon"></i>
-                      +447593794424
+                      {/* <i className="fa fa-whatsapp whatsapp-icon"></i> */}
+                      <img src="https://img.icons8.com/color/27/000000/whatsapp--v3.png"/>
+                      Whatsapp
                     </a>
                   </ListGroup.Item>
 
@@ -170,7 +172,7 @@ const HeaderTabMenus = () => {
               <Col sm={3}>
                 <a href="/home" className="logo mr-auto">
                   <img
-                    src={logo}
+                    src={showHome? (showScroll ? logo1 : logo) : logo1}
                     alt=""
                     className={showHome ? (showScroll ? "img-fluid logo-small" : "img-fluid logo-large") : "img-fluid logo-small"}
                   />

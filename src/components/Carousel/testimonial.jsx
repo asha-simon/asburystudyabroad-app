@@ -12,7 +12,7 @@ const TestimonialsCarousel = () => {
   const options = {
     autoplay: true,
     dots: true,
-    loop: true,
+    loop: false,
     margin: 8,
     responsive: {
       0: {
@@ -67,9 +67,9 @@ const TestimonialsCarousel = () => {
                       My journey to studying abroad happened with the help of
                       Asbury Study Abroad in the UK. Presently, am a student at
                       Kingston University pursuing Msc. International Business
-                      Management. I am thankful to Raji Mam for helping me to
+                      Management. I am thankful to Raji Madam for helping me to
                       choose the right university and courses. She helped to get
-                      my visa without much effort from my side. Also, Raji Mam
+                      my visa without much effort from my side. Also, Raji Madam
                       was very much accessible and was spontaneous in responding
                       to my queries. I am thankful to her for their guidance and
                       for making my dream come true. Wishing the best for the
