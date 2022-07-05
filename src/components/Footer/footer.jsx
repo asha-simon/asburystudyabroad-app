@@ -44,17 +44,16 @@ const Footer = () => {
                   <div className="col-md-12 footer-contact-col">
                     <i className="icofont-google-map"></i>
                     <p>
-                      Asbury International,
-                      Puliyazhikathu Building,
-                      326/2 Pulamon,
-                      Kottarakara, Kollam,
-                      Kerala, India 691531
-                    </p>
+                      Asbury International,<br/>
+                      131 Ashburton Avenue,<br/>
+                      IG3 9EW,<br/>
+                      London,<br/>
+                      United Kingdom</p>
                   </div>
                   <div className="col-md-12 footer-contact-col">
                     <i className="icofont-phone"></i>
                     <p>
-                      <a href="tel: +917012052751"> +91 70120 52751 </a>
+                      <a href="tel: +447883390145"> +44 7883 390145 </a>
                     </p>
                   </div>
                   <div className="col-md-12 footer-contact-col">
@@ -116,14 +115,15 @@ const Footer = () => {
                       <i className="bx bxl-facebook"></i>
                     </a>
                     <a
-                      href="https://www.youtube.com/channel/UCf-YLLLsX1aBJ_FrsleR_BA"
-                      className="youtube"
+                      href="https://www.instagram.com/asbury.uk/"
+                      className="instagram"
                     >
+                    
                       <i className="bx bxl-instagram"></i>
                     </a>
                     <a
-                      href="https://www.instagram.com/asbury.uk/"
-                      className="instagram"
+                      href="https://www.youtube.com/channel/UCf-YLLLsX1aBJ_FrsleR_BA"
+                      className="youtube"
                     >
                       <i className="bx bxl-youtube"></i>
                     </a>

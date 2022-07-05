@@ -52,12 +52,11 @@ const ContactUs = () => {
                     <Icofont icon="icofont-google-map" />
                     {/* <i className="icofont-google-map"></i> */}
                     <h4>Location:</h4>
-                    <p>Puliyazhikathu Building,
-                      326/2 Pulamon,
-                      Kottarakara,
-                      Kollam,
-                      Kerala,
-                      India 691531</p>
+                    <p>
+                      131 Ashburton Avenue,<br/>
+                      IG3 9EW,<br/>
+                      London,<br/>
+                      United Kingdom</p>
                   </div>
 
 
@@ -70,7 +69,7 @@ const ContactUs = () => {
                   <div className="phone">
                     <Icofont icon="icofont-phone" />
                     <h4>Call:</h4>
-                    <p><a href="tel: +917012052751">+91 70120 52751</a></p>
+                    <p><a href="tel: +447883390145">+44 7883 390145</a></p>
                   </div>
                 </div>
               </div>
