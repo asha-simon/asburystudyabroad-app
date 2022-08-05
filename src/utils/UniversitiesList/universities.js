@@ -1,0 +1,30 @@
+export const ireland_university_list = [
+  "Dublin City University (DCU)",
+  "National University of Ireland, Galway",
+  "National University of Ireland, Maynooth",
+  "Trinity College, Dublin",
+  "University College Cork",
+  "University College Dublin",
+  "University of Limerick",
+];
+
+export const uk_university_list = [
+  "University Of Hertfordshire",
+  "University College London",
+  "Imperial College London",
+  "De Montfort University",
+  "University of Portsmouth",
+  "Northumbria University New Castle",
+  "BPP University",
+  "Heriot-Watt University",
+  "University of Greenwich",
+  "Birmingham City University",
+  "Royal Agricultural University",
+  "Kingston University London",
+  "Teesside University",
+  "University of East London",
+  "University of Bedfordshire",
+  "Glasgow Caledonian University",
+  "University of the West of Scotland",
+  "Coventry University",
+];
